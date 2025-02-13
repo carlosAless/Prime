@@ -1,0 +1,15 @@
+.hero {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: max(40pt, 20px);
+}
+
+.typed-text {
+  color: blue;
+}

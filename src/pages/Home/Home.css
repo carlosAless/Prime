@@ -1,0 +1,18 @@
+.home {
+  width: 100%;
+  height: auto;
+}
+
+.home .main {
+  background: #101112;
+  position: relative; /* Para que o elemento filho (.title) com position: absolute seja relativo a essa div */
+  background-image: url("../../assets/background.png");
+  background-repeat: repeat; /* Repete a imagem infinitamente */
+  padding: 0rem 5% 0px 5%;
+  width: 100%;
+}
+
+.home .main .contentMain {
+  max-width: 1700px;
+  margin: auto;
+}

@@ -1,0 +1,84 @@
+.highlightsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5rem 0rem 10rem 0rem;
+}
+
+.highlightsContainer .highlightItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white-text);
+}
+
+.highlightsContainer .highlightItem span {
+  font-size: 35pt;
+  color: cornflowerblue;
+  font-weight: bolder;
+}
+
+.highlightsContainer .highlightItem img {
+  width: 50px;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: row;
+}
+
+.servicesList .contentServices {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--color-white-text);
+  gap: 2rem;
+}
+
+.serviceItem {
+  text-align: center;
+  width: 350px; /* Largura do contêiner */
+  height: 350px; /* Altura do contêiner */
+  background-color: #0f1011; /* Fundo do contêiner */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 -4px 0px #0a0b0c,
+    /* Sombra clara na parte superior */ 0 4px 0px #0a0b0c, -4px 0 0px #0a0b0c,
+    /* Sombra na lateral esquerda */ 4px 0 0px #0a0b0c,
+    /* Sombra escura na parte inferior */ inset 0 1px 1px
+      rgba(255, 255, 255, 0.1),
+    /* Brilho interno */ inset 0 -1px 2px rgba(0, 0, 0, 0.5); /* Sombra interna inferior */
+}
+
+.description {
+  width: 50%;
+}
+
+.description h2 {
+  font-size: 12pt;
+  text-align: center;
+  color: var(--color-white-text);
+}
+
+.carroselList {
+  padding: 5rem 0rem 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white-text);
+}
+
+.carroselList div {
+  display: flex;
+  gap: 50px;
+}
+
+.carroselList img {
+  height: 40px;
+}

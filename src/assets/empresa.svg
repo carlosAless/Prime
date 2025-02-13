@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 1024 1024" width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(90)" d="m0 0h483v102l-1 18h90l1 1v270h119v-119l1-1 59-1h180l2 1v753h-1024v-904h89v-38zm420 60-359 1v59h360v-60zm-449 121v662h147l2-1 1-149h241v150h148l1-1 1-46v-614l-1-1zm784 150-1 1-1 59h120v-59l-3-1zm-182 121v511h300v-511zm-391 301-1 6v204h120v-210zm-211 151-1 53 1 6h149v-59zm393-1-2 1v59h149l1-59z" fill="#FEFEFE"/>
+<path transform="translate(843,662)" d="m0 0h60l1 1v89l-1 1h-60l-1-12v-78z" fill="#fff"/>
+<path transform="translate(242,541)" d="m0 0 59 1 1 3v86l-2 2h-59l-1-1v-90z" fill="#fff"/>
+<path transform="translate(241,391)" d="m0 0h60l1 2v87l-1 2h-60l-1-1v-89z" fill="#fff"/>
+<path transform="translate(481,391)" d="m0 0h61l1 6v83l-1 2h-60l-1-1z" fill="#fff"/>
+<path transform="translate(843,511)" d="m0 0h60l1 1v90l-7 1h-53l-1-1z" fill="#FCFCFC"/>
+<path transform="translate(483,541)" d="m0 0 58 1 1 1 1 22v66l-3 2h-58l-1-1v-90z" fill="#fff"/>
+<path transform="translate(722,662)" d="m0 0h60l2 3v86l-1 2h-60l-1-1z" fill="#fff"/>
+<path transform="translate(121,541)" d="m0 0h57l3 1v90l-2 1h-58l-1-1v-90z" fill="#fff"/>
+<path transform="translate(723,511)" d="m0 0h59l2 2v87l-1 2h-61v-90z" fill="#FCFCFC"/>
+<path transform="translate(364,541)" d="m0 0 57 1 1 1v89l-1 1h-60v-91z" fill="#fff"/>
+<path transform="translate(361,391)" d="m0 0h61v90l-1 1h-60z" fill="#fff"/>
+<path transform="translate(120,391)" d="m0 0h61v90l-1 1h-59l-1-1z" fill="#fff"/>
+<path transform="translate(242,240)" d="m0 0 59 1 1 1v87l-1 2h-60l-1-1v-89z" fill="#fff"/>
+<path transform="translate(121,240)" d="m0 0h57l3 1v90h-61v-90z" fill="#fff"/>
+<path transform="translate(843,813)" d="m0 0h60l1 1v88l-1 1-59 1-1-1-1-76v-12z" fill="#fff"/>
+<path transform="translate(482,240)" d="m0 0 60 1 1 5v82l-1 3h-60l-1-1v-89z" fill="#fff"/>
+<path transform="translate(722,813)" d="m0 0h61l1 5-1 85-59 1-2-1z" fill="#fff"/>
+<path transform="translate(362,240)" d="m0 0 59 1 1 1v88l-1 1h-60v-90z" fill="#fff"/>
+</svg>
