@@ -1,5 +1,12 @@
-.containerServices {
-  padding: 6rem 0rem 6rem 0rem;
+.rhid .rhidImage {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.rhid .rhidImage img {
+  width: 70%;
+  border-radius: 10px;
 }
 
 .btn button {
@@ -40,6 +47,11 @@ svg {
 
 svg rect {
   fill: none;
+}
+
+.services {
+  position: relative;
+  padding: 5rem 0rem 5rem 0rem;
 }
 
 .containerServices {

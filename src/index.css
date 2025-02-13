@@ -18,3 +18,27 @@
   --color-blue-lite: cornflowerblue;
   --color-black-blue: #22242f;
 }
+
+.vertical-text {
+  writing-mode: vertical-rl; /* Texto na vertical (direita para esquerda) */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Inverte a direção para ficar mais legível */
+  white-space: nowrap; /* Evita quebra de linha */
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5%;
+  right: 100%;
+
+  /* Gradiente de cor azul escuro para azul claro */
+  background: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  -webkit-text-fill-color: transparent; /* Faz o texto herdar o gradiente */
+}

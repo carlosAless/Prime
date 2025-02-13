@@ -8,6 +8,8 @@ export const About = () => {
 
   return (
     <section className="aboutSection" ref={ref}>
+      <span className="vertical-text">ABOUT</span>
+
       <div className="highlightsContainer">
         <div className="highlightItem">
           <img src={assets.suporte} alt="suporte" />

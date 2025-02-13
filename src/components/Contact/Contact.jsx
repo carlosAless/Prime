@@ -20,7 +20,8 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <section className="contact">
+      <span className="vertical-text">CONTATO</span>
       <div className="containerContact">
         <h2>Quer entrar em contato?</h2>
         <div className="contentContact">

@@ -40,6 +40,7 @@ const Services = () => {
 
   return (
     <div className="services">
+      <span className="vertical-text">SERVIÇOS</span>
       <div className="containerServices">
         <div className="section-relogio">
           <main className="relogio">
@@ -154,10 +155,16 @@ const Services = () => {
 
           <section className="rhid">
             <h2>Sistema de ponto integrado ao RHID</h2>
-            <p>RHID para gerenciamento de RH</p>
 
             <div className="rhidImage">
               <img src={assets.rhid} alt="rhid" />
+              <p>
+                O RHID é a solução ideal para otimizar a gestão de ponto
+                eletrônico, garantindo mais eficiência e precisão no controle de
+                jornada dos colaboradores. Com integração direta ao relógio de
+                ponto, o sistema automatiza processos, reduz erros manuais e
+                assegura conformidade com a legislação trabalhista.
+              </p>
             </div>
           </section>
           <div className="itMaintenance">

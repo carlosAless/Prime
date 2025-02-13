@@ -1,3 +1,7 @@
+.contact {
+  position: relative;
+}
+
 .contentContact {
   display: flex;
   flex-direction: column-reverse;
