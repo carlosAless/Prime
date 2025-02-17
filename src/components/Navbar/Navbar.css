@@ -1,6 +1,8 @@
 .headerNavbar {
   height: 50px;
   width: 100%;
+  position: relative;
+  z-index: 1001;
 }
 
 .headerNavbar nav {

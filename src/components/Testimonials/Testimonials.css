@@ -1,0 +1,88 @@
+.comments {
+  padding: 5rem 0rem 5rem 0rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.comments::before,
+.comments::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.comments::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #101112);
+}
+
+.comments::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #101112);
+}
+
+.comments h2 {
+  text-align: center;
+  padding: 0rem 0rem 5rem 0rem;
+  color: var(--color-white-text);
+}
+
+.wrapper .commentTrackDown {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+  animation: 55s slide infinite linear;
+}
+
+.wrapper:hover .commentTrackDown {
+  animation-play-state: paused;
+}
+
+.wrapper .comment {
+  color: var(--color-white-text);
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  background-color: #0f1011;
+  border-radius: 5px;
+  box-shadow: 0 -4px 0px #0a0b0c, 0 4px 0px #0a0b0c, -4px 0 0px #0a0b0c,
+    4px 0 0px #0a0b0c, inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .comment .commentHeader {
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper .comment {
+  position: relative;
+}
+
+.wrapper .comment #spanLogoGoogle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#logoGoogle {
+  width: 25px;
+}
+.user {
+  width: 70px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

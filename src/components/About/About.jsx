@@ -10,52 +10,6 @@ export const About = () => {
     <section className="aboutSection" ref={ref}>
       <span className="vertical-text">ABOUT</span>
 
-      <div className="highlightsContainer">
-        <div className="highlightItem">
-          <img src={assets.suporte} alt="suporte" />
-          <span>
-            {" "}
-            {inView ? <CountUp start={0} end={24} duration={3} /> : "0"}/{" "}
-            {inView ? <CountUp start={0} end={7} duration={3} /> : "0"}
-          </span>
-          <p>Suporte</p>
-        </div>
-
-        <div className="highlightItem">
-          <img
-            src={assets.empresa}
-            alt="+12 empresas mensalistas"
-            className="icon"
-          />
-          <span>
-            + {inView ? <CountUp start={0} end={12} duration={5} /> : "0"}
-          </span>
-          <p>empresas mensalistas</p>
-        </div>
-
-        <div className="highlightItem">
-          <img
-            src={assets.experiencia}
-            alt="+9 anos de experiência"
-            className="icon"
-          />
-          <span>
-            + {inView ? <CountUp start={0} end={9} duration={5} /> : "0"}
-          </span>
-          <p>anos de experiência</p>
-        </div>
-
-        <div className="highlightItem">
-          <img
-            src={assets.mapa}
-            alt="Atendimento em Jataí e região"
-            className="icon"
-          />
-          <span>✔</span>
-          <p>Atendimento em Jataí e região</p>
-        </div>
-      </div>
-
       <div className="servicesList">
         <model-viewer
           src={assets.computer}
@@ -64,35 +18,9 @@ export const About = () => {
           camera-controls
           ar
         ></model-viewer>
-
-        <div className="contentServices">
-          <div className="serviceItem">
-            <div className="serviceIcon"></div>
-            <h4>Relógio de ponto</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-
-          <div className="serviceItem">
-            <div className="serviceIcon"></div>
-            <h4>Redes e infraestrutura</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-
-          <div className="serviceItem">
-            <div className="serviceIcon"></div>
-            <h4>Suporte em T.I</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-
-          <div className="serviceItem">
-            <div className="serviceIcon"></div>
-            <h4>Venda de equipamentos</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-        </div>
-
+        <h2>Porque nós?</h2>
         <div className="description">
-          <h2>
+          <h4>
             Atuamos nas áreas de consultoria, desenvolvimento, infraestrutura,
             suporte, treinamento, recuperação de dados, segurança da informação
             e venda de equipamentos. Prezamos pela qualidade dos produtos e
@@ -100,18 +28,132 @@ export const About = () => {
             clientes. Integramos pessoas e processos através de soluções
             tecnológicas que visem a excelência dos negócios e o crescimento dos
             nossos parceiros.
-          </h2>
+          </h4>
+        </div>
+
+        <div className="highlightsContainer">
+          <div className="highlightItem">
+            <img src={assets.suporte} alt="suporte" />
+            <span>
+              {" "}
+              {inView ? <CountUp start={0} end={24} duration={3} /> : "0"}/{" "}
+              {inView ? <CountUp start={0} end={7} duration={3} /> : "0"}
+            </span>
+            <p>Suporte</p>
+          </div>
+
+          <div className="highlightItem">
+            <img
+              src={assets.empresa}
+              alt="+12 empresas mensalistas"
+              className="icon"
+            />
+            <span>
+              + {inView ? <CountUp start={0} end={12} duration={5} /> : "0"}
+            </span>
+            <p>empresas mensalistas</p>
+          </div>
+
+          <div className="highlightItem">
+            <img
+              src={assets.experiencia}
+              alt="+9 anos de experiência"
+              className="icon"
+            />
+            <span>
+              + {inView ? <CountUp start={0} end={9} duration={5} /> : "0"}
+            </span>
+            <p>anos de experiência</p>
+          </div>
+
+          <div className="highlightItem">
+            <img
+              src={assets.mapa}
+              alt="Atendimento em Jataí e região"
+              className="icon"
+            />
+            <span>✔</span>
+            <p>Atendimento em Jataí e região</p>
+          </div>
+        </div>
+        <h2 id="titleShowServices">
+          Conheça nossos <span>serviços</span>
+        </h2>
+        <div className="contentServices">
+          <div className="serviceItem">
+            <div className="serviceIcon"></div>
+            <h4>Relógio de ponto</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div className="btn">
+              <button>
+                <a href="#">
+                  Saiba mais
+                  <img src={assets.arrowright} alt="arrow" />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div className="serviceItem">
+            <div className="serviceIcon"></div>
+            <h4>Redes e infraestrutura</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div className="btn">
+              <button>
+                <a href="#">
+                  Saiba mais
+                  <img src={assets.arrowright} alt="arrow" />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div className="serviceItem">
+            <div className="serviceIcon"></div>
+            <h4>Suporte em T.I</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div className="btn">
+              <button>
+                <a href="#">
+                  Saiba mais
+                  <img src={assets.arrowright} alt="arrow" />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div className="serviceItem">
+            <div className="serviceIcon"></div>
+            <h4>Venda de equipamentos</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div className="btn">
+              <button>
+                <a href="#">
+                  Saiba mais
+                  <img src={assets.arrowright} alt="arrow" />
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="carroselList">
-        <h3>Clientes que confiam</h3>
+        <h2>
+          Clientes que <span>confiam</span>
+        </h2>
 
         <div>
-          <img src={assets.oliveiragomes} alt="oliveiragomes" />
+          <img src={assets.oliveiragomes} alt="oliveira gomes" />
           <img src={assets.prefeitura} alt="prefeitra" />
-          <img src={assets.jataiautopecas} alt="jataiautopecas" />
+          <img src={assets.jataiautopecas} alt="jatai autopecas" />
           <img src={assets.trialmoto} alt="trialmoto" />
+          <img src={assets.rededrogao} alt="rede drogao" id="rededrogao" />
+          <img src={assets.metta} alt="metta" />
+          <img
+            src={assets.sementeslima}
+            alt="sementes lima"
+            id="sementeslima"
+          />
+          <img src={assets.metra} alt="metra" id="metra" />
+          <img src={assets.venus} alt="venus" id="venus" />
         </div>
       </div>
     </section>

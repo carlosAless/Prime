@@ -48,27 +48,6 @@ const Services = () => {
               <h2>Controle de Acesso Inteligente</h2>
             </div>
             <section className="info">
-              <div>
-                <span className="descricao">
-                  <p>
-                    Garanta máxima segurança e praticidade com os controladores
-                    de acesso da Control iD. Nossos dispositivos oferecem
-                    tecnologia avançada de identificação, incluindo leitura de
-                    impressão digital de alta precisão, para um acesso rápido,
-                    confiável e sem complicações.
-                  </p>
-                </span>
-
-                <div className="btn">
-                  <button>
-                    <a href="#">
-                      Saiba mais
-                      <img src={assets.arrowright} alt="arrow" />
-                    </a>
-                  </button>
-                </div>
-              </div>
-
               <section className="controle-acesso">
                 <section className="produtosid">
                   <img

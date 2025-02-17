@@ -8,6 +8,7 @@
   justify-content: space-around;
   flex-direction: row;
   padding: 5rem 0rem 5rem 0rem;
+  width: 100%;
 }
 
 .highlightsContainer .highlightItem {
@@ -31,14 +32,28 @@
 .servicesList {
   padding: 5rem 0rem 5rem 0rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#titleShowServices {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  padding: 5rem 0rem 1rem 0rem;
+}
+
+#titleShowServices span {
+  font-weight: 400;
+  color: cornflowerblue;
+}
 .servicesList .contentServices {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   color: var(--color-white-text);
@@ -46,6 +61,10 @@
 }
 
 .serviceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-evenly;
   text-align: center;
   width: 350px; /* Largura do contêiner */
   height: 350px; /* Altura do contêiner */
@@ -63,8 +82,8 @@
   width: 50%;
 }
 
-.description h2 {
-  font-size: 12pt;
+.description h4 {
+  font-size: 10pt;
   text-align: center;
   color: var(--color-white-text);
 }
@@ -76,14 +95,32 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
-  color: var(--color-white-text);
+}
+
+.carroselList span {
+  color: cornflowerblue;
+  font-weight: 400;
 }
 
 .carroselList div {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
 .carroselList img {
   height: 40px;
+}
+
+#rededrogao {
+  background-color: red;
+}
+
+#sementeslima {
+  height: 90px;
+}
+
+#venus {
+  height: 100px;
+  width: 100px;
 }

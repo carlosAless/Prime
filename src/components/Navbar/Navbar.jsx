@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { assets } from "../../assets/assets";
 import "./Navbar.css";
+import SupportModal from "../SupportModal/SupportModal";
 
 const Navbar = () => {
+  const [openSupport, setOpenSupport] = useState(false);
   const [menuSelect, setMenuSelect] = useState("Inicio");
 
   return (
@@ -19,53 +21,34 @@ const Navbar = () => {
           </div>
           <ul>
             <li>
-              <a
-                href="#"
-                className={menuSelect === "Inicio" ? "menuActive" : ""}
-                onClick={() => setMenuSelect("Inicio")}
-              >
-                Inicio
-              </a>
+              <a href="#">Sobre nos</a>
             </li>
             <li>
               <a
                 href="#"
-                className={menuSelect === "Sobre" ? "menuActive" : ""}
-                onClick={() => setMenuSelect("Sobre")}
-              >
-                Sobre nos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={menuSelect === "Suporte" ? "menuActive" : ""}
-                onClick={() => setMenuSelect("Suporte")}
+                onClick={(e) => {
+                  e.preventDefault(); // Evita que a página recarregue
+                  setOpenSupport(true);
+                }}
               >
                 Suporte
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className={menuSelect === "Feedback" ? "menuActive" : ""}
-                onClick={() => setMenuSelect("Feedback")}
-              >
-                Feedback
-              </a>
+              <a href="#">Feedback</a>
             </li>
             <li>
-              <a
-                href="#"
-                className={menuSelect === "Contato" ? "menuActive" : ""}
-                onClick={() => setMenuSelect("Contato")}
-              >
-                Contato
-              </a>
+              <a href="#">Contato</a>
             </li>
           </ul>
         </nav>
       </header>
+      {openSupport && (
+        <SupportModal
+          setOpenSupport={setOpenSupport}
+          onClose={() => setOpenSupport(false)}
+        />
+      )}
     </div>
   );
 };

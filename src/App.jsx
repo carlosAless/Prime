@@ -1,12 +1,15 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
+import { NotFound } from "./pages/NotFound/NotFound"; // Importe a página 404
 
 function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/404" />} />
+        <Route path="/404" element={<NotFound />} />
       </Routes>
     </div>
   );

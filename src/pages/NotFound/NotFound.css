@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.NotFound {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NotFound img {
+  width: 500px;
+}
+
+#titleNotFound {
+  color: cornflowerblue;
+}
+
+.glitch {
+  font-size: 100px;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+
+.glitch::before,
+.glitch::after {
+  content: "404";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  color: #1d454b;
+  transform: translate(-3px, -3px);
+  animation: glitch 0.3s infinite alternate;
+}
+
+.glitch::after {
+  color: #19263a;
+  transform: translate(3px, 3px);
+  animation: glitch 0.3s infinite alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(-3px, -3px);
+  }
+  100% {
+    transform: translate(3px, 3px);
+  }
+}

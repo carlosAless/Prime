@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -12,6 +13,11 @@
   transition: all 0.5s ease-in-out;
 }
 
+body,
+html {
+  width: 100%;
+}
+
 :root {
   --color-white-text: white;
   --color-black-text: black;
@@ -19,6 +25,14 @@
   --color-black-blue: #22242f;
 }
 
+h2 {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-white-text);
+  font-size: 25pt;
+}
 .vertical-text {
   writing-mode: vertical-rl; /* Texto na vertical (direita para esquerda) */
   text-orientation: mixed;
