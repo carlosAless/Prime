@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.glb"], // Adicione essa linha para incluir arquivos .glb como assets
+  base: "/Prime",
 });
