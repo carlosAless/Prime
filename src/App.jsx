@@ -6,11 +6,11 @@ import { NotFound } from "./pages/NotFound/NotFound"; // Importe a página 404
 
 function App() {
   return (
-    <div className="container">
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </div>
+    <>
+      <div className="container">
+        <Home></Home>
+      </div>
+    </>
   );
 }
 
