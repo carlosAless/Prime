@@ -8,7 +8,6 @@ function App() {
     <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/404" element={<NotFound />} />
       </Routes>
     </div>
   );
