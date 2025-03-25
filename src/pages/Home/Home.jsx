@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 import Contact from "../../components/Contact/Contact";
 import { About } from "../../components/About/About";
-import Services from "../../components/services/Services";
+import Services from "../../components/services/Services.jsx";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { assets } from "../../assets/assets";
 

@@ -1,4 +1,5 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import Home from "./pages/Home/Home";
 import { NotFound } from "./pages/NotFound/NotFound"; // Importe a página 404

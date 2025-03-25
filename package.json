@@ -1,5 +1,4 @@
 {
-  "homepage": "https://carlosAless.github.io/Prime",
   "name": "prime",
   "private": true,
   "version": "0.0.0",
@@ -8,15 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@google/model-viewer": "^4.0.0",
     "@tsparticles/engine": "^3.8.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.0.0",
+    "hashrouter": "^1.1.1",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
