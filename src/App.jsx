@@ -6,10 +6,12 @@ import { NotFound } from "./pages/NotFound/NotFound";
 function App() {
   return (
     <div className="container">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
