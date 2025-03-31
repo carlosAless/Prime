@@ -24,6 +24,7 @@ import whatsappicon from "./whatsappicon.png";
 import notfound from "./404.gif";
 import venus from "./venus.svg";
 import metra from "./metra.svg";
+import relogiodeponto from "./relogiodeponto.png";
 
 export const assets = {
   logo,
@@ -52,6 +53,7 @@ export const assets = {
   notfound,
   metra,
   venus,
+  relogiodeponto,
 };
 
 export const comments = [

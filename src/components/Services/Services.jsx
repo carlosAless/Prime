@@ -82,7 +82,7 @@ const Services = () => {
             </section>
 
             <div className="svg-container">
-              <svg
+              {/*  <svg
                 width="100%"
                 height="500"
                 viewBox="0 0 800 500"
@@ -149,7 +149,9 @@ const Services = () => {
                   RHID + IDCLOUD integração com software de apuração de ponto na
                   nuvem
                 </text>
-              </svg>
+              </svg> */}
+
+              <img src={assets.relogiodeponto} alt="relogio de ponto" />
             </div>
           </main>
 

@@ -33,9 +33,9 @@ const Footer = () => {
           </div>
           <div className="footerContact">
             <h4 className="customerSupportTitle">ATENDIMENTO</h4>
-            <p>📞 (XX) XXXX-XXXX</p>
-            <p>📱 WhatsApp: (XX) XXXXX-XXXX</p>
-            <p>📧 contato@seudominio.com.br</p>
+            <p>📞 (64) 3631-6296</p>
+            <p>📱 WhatsApp: (64) 3631-6296</p>
+            <p>📧 contato@primetecnologiajatai.com.br</p>
             <div className="footerSocial">
               <a href="#">Facebook</a>
               <a href="#">Instagram</a>

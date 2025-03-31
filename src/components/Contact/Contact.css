@@ -4,10 +4,67 @@
 
 .contentContact {
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  gap: 5rem; /* Espaço entre os elementos */
+  text-align: center;
   justify-content: center;
-  gap: 5rem;
+  flex-direction: column;
+}
+
+.contentContact span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerContact .contentContact .ct {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.containerContact {
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+.containerContact span {
+  color: #ffffff;
+  font-size: 35pt;
+  text-align: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contact-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 270px;
+  padding: 2rem 2rem 2rem 2rem;
+  color: white;
+  font-size: 12pt;
+  overflow: hidden;
+  position: relative;
+  background-color: #0f1011;
+  border-radius: 5px;
+  box-shadow: 0 -4px 0px #0a0b0c, 0 4px 0px #0a0b0c, -4px 0 0px #0a0b0c,
+    4px 0 0px #0a0b0c, inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section h3 {
+  font-size: 17pt;
+}
+
+.contact-section p {
+  font-size: 10pt;
 }
 
 .containerContact h2 {
@@ -21,7 +78,7 @@
 }
 
 .form {
-  width: 40%;
+  width: 100%;
 }
 
 .form {
@@ -31,22 +88,35 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #0f1011;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 -4px 0px #0a0b0c, 0 4px 0px #0a0b0c, -4px 0 0px #0a0b0c,
+    4px 0 0px #0a0b0c, inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .form input {
   width: 100%;
   height: 50px;
+  background-color: #24242454;
+  border-bottom: 1px solid black;
 }
 
 input[type="submit"] {
   cursor: pointer;
   font-size: 12pt;
+  color: #afafaf;
+  border: none;
 }
 
 textarea {
   resize: none;
   width: 100%;
   height: 100%;
+  background-color: #24242454;
+  color: #afafaf;
+  border-bottom: 1px solid black;
 }
 
 .groupInputMessage {
@@ -71,5 +141,5 @@ label {
   position: absolute;
   top: 12px;
   left: 5px;
-  color: #273746ab;
+  color: #afafaf;
 }

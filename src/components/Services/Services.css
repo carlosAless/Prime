@@ -67,6 +67,28 @@ svg rect {
   overflow: hidden;
 }
 
+.svg-container svg text {
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #09090a 0%,
+    var(--token-2410a455-69e7-4149-9668-bbeb659e1a1e, rgb(19, 21, 22)) 100%
+  );
+  border-radius: 80px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  width: min-content;
+  will-change: var(--framer-will-change-override, transform);
+}
+
 .path {
   fill: none;
   stroke: gray;
