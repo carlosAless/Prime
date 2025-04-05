@@ -1,24 +1,22 @@
 import { useState } from "react";
 import { assets } from "../../assets/assets";
+import { IoMenu, IoClose } from "react-icons/io5";
+
 import "./Navbar.css";
 import SupportModal from "../SupportModal/SupportModal";
 
 const Navbar = () => {
   const [openSupport, setOpenSupport] = useState(false);
   const [menuSelect, setMenuSelect] = useState("Inicio");
+  const [navMenuBool, setnavMenuBool] = useState(false);
 
   return (
-    <div>
+    <div className="navbarContainer">
       <header className="headerNavbar">
-        <nav>
-          <a href="#">
-            <img src={assets.logo} alt="logo" className="logo" />
-          </a>
-          <div className="mobileMenu">
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
+        <a href="#">
+          <img src={assets.logo} alt="logo" className="logo" />
+        </a>
+        <nav className={`navMenu ${navMenuBool ? "open" : ""}`}>
           <ul>
             <li>
               <a href="#">Sobre nos</a>
@@ -42,6 +40,13 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+
+        <div
+          className="mobileMenu"
+          onClick={() => setnavMenuBool(!navMenuBool)}
+        >
+          {navMenuBool ? <IoClose size={30} /> : <IoMenu size={30} />}
+        </div>
       </header>
       {openSupport && (
         <SupportModal
