@@ -27,8 +27,11 @@
 }
 
 .info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .info div {
@@ -62,9 +65,13 @@ svg rect {
 }
 .svg-container {
   margin-top: 100px; /* Distância para que o SVG não comece no topo da tela */
-  height: 500px;
+  height: auto;
   width: 100%;
   overflow: hidden;
+}
+
+.svg-container img {
+  width: 100%;
 }
 
 .svg-container svg text {
@@ -213,4 +220,15 @@ svg rect {
   color: white;
   text-align: center;
   padding: 100px 20px;
+}
+
+.produtosId img {
+  width: 100%;
+}
+
+@media (max-width: 724px) {
+  .info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }

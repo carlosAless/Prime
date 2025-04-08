@@ -25,6 +25,7 @@ import notfound from "./404.gif";
 import venus from "./venus.svg";
 import metra from "./metra.svg";
 import relogiodeponto from "./relogiodeponto.png";
+import scrollingMouse from "./scrollingMouse.gif";
 
 export const assets = {
   logo,
@@ -54,6 +55,7 @@ export const assets = {
   metra,
   venus,
   relogiodeponto,
+  scrollingMouse,
 };
 
 export const comments = [

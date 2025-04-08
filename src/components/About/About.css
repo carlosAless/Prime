@@ -9,6 +9,7 @@
   flex-direction: row;
   padding: 5rem 0rem 5rem 0rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .highlightsContainer .highlightItem {
@@ -20,7 +21,12 @@
 }
 
 .highlightsContainer .highlightItem span {
-  font-size: 35pt;
+  font-size: clamp(
+    16px,
+    4vw,
+    35pt
+  ); /* Mínimo: 16px, Ideal: 4vw, Máximo: 35pt */
+
   color: cornflowerblue;
   font-weight: bolder;
 }
@@ -95,6 +101,7 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .carroselList span {

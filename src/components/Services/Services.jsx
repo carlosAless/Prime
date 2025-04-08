@@ -58,19 +58,10 @@ const Services = () => {
                     confiável e sem complicações.
                   </p>
                 </span>
-
-                <div className="btn">
-                  <button>
-                    <a href="#">
-                      Saiba mais
-                      <img src={assets.arrowright} alt="arrow" />
-                    </a>
-                  </button>
-                </div>
               </div>
 
-              <section className="controle-acesso">
-                <section className="produtosid">
+              <section className="controleAcesso">
+                <section className="produtosId">
                   <img
                     src={assets.controlacess}
                     alt="idclass"

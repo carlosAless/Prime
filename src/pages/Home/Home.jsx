@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar></Navbar>
+
       <Header></Header>
 
       <main className="main">
@@ -23,6 +24,7 @@ const Home = () => {
           <Footer></Footer>
         </div>
       </main>
+
       <a
         href="https://wa.me/556436316296?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20Prime."
         target="_blank"

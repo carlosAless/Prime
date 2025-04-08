@@ -45,7 +45,11 @@ const Navbar = () => {
           className="mobileMenu"
           onClick={() => setnavMenuBool(!navMenuBool)}
         >
-          {navMenuBool ? <IoClose size={30} /> : <IoMenu size={30} />}
+          {navMenuBool ? (
+            <IoClose size={30} color="black" />
+          ) : (
+            <IoMenu size={30} color="black" />
+          )}
         </div>
       </header>
       {openSupport && (

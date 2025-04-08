@@ -4,6 +4,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ou a altura desejada */
+  overflow: hidden; /* impede que as partículas vazem */
 }
 
 .hero h1 {

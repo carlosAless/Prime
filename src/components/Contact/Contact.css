@@ -22,6 +22,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerContact {
@@ -38,6 +40,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-section {
@@ -79,9 +82,6 @@
 
 .form {
   width: 100%;
-}
-
-.form {
   height: 450px;
   padding: 0rem 1rem 0rem 1rem;
   max-width: 600px;
@@ -142,4 +142,21 @@ label {
   top: 12px;
   left: 5px;
   color: #afafaf;
+}
+
+@media (max-width: 999px) {
+  .maps {
+    display: none;
+  }
+
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerContact .contentContact .ct {
+    flex-direction: column;
+  }
+  .contact-info {
+    display: none;
+  }
 }
