@@ -4,7 +4,7 @@
 }
 
 .home .main {
-  background: #101112;
+  background: #010d18;
   position: relative; /* Para que o elemento filho (.title) com position: absolute seja relativo a essa div */
   background-image: url("../../assets/background.png");
   background-repeat: repeat; /* Repete a imagem infinitamente */

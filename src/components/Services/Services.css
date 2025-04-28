@@ -1,3 +1,7 @@
+.section-relogio {
+  position: relative;
+}
+
 .rhid .rhidImage {
   display: flex;
   flex-direction: column-reverse;
@@ -32,11 +36,39 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 0.5px solid rgba(126, 123, 123, 0.301);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #010d18;
 }
 
 .info div {
   display: flex;
   flex-direction: column;
+}
+
+.time-clock-section {
+  position: sticky;
+  border: 0.5px solid rgba(126, 123, 123, 0.301);
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  background-color: #010d18;
+}
+
+.time-clock-image img {
+  width: 80%;
+}
+
+.rhid {
+  position: sticky;
+  height: 100vh;
+  border: 0.5px solid rgba(126, 123, 123, 0.301);
+  z-index: 3;
+  background-color: #010d18;
+  top: 0;
 }
 
 svg {
@@ -62,6 +94,10 @@ svg rect {
   height: auto;
   text-align: center;
   color: var(--color-white-text);
+}
+
+.containerServices .title-controle h2 {
+  border: 0.5px solid rgba(126, 123, 123, 0.301);
 }
 .svg-container {
   margin-top: 100px; /* Distância para que o SVG não comece no topo da tela */
@@ -186,6 +222,10 @@ svg rect {
   padding: 100px 20px;
 }
 
+.itMaintenance #contentPersonalComputer img {
+  width: 50%;
+}
+
 .itMaintenance .burble {
   z-index: 1;
   top: 50%;
@@ -220,6 +260,10 @@ svg rect {
   color: white;
   text-align: center;
   padding: 100px 20px;
+}
+
+#contentNetwork .networkImg {
+  width: 100%;
 }
 
 .produtosId img {

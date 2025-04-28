@@ -4,30 +4,35 @@
   position: relative;
 }
 
-.comments::before,
-.comments::after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.comments::before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #101112);
-}
-
-.comments::after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #101112);
-}
-
 .comments h2 {
   text-align: center;
   padding: 0rem 0rem 5rem 0rem;
   color: var(--color-white-text);
+}
+
+.wrapper::before,
+.wrapper::after {
+  position: absolute;
+  bottom: 80px;
+  width: 250px;
+  height: 350px;
+  content: "";
+  z-index: 2;
+}
+
+.wrapper::before {
+  left: 0;
+  bottom: 80px;
+  background: url(/Prime/src/assets/background.png),
+    linear-gradient(to left, rgba(255, 255, 255, 0), #010d18);
+  background-blend-mode: normal; /* ajuste conforme necessário */
+}
+
+.wrapper::after {
+  right: 0;
+  background: url(/Prime/src/assets/background.png),
+    linear-gradient(to right, rgba(255, 255, 255, 0), #010d18);
+  background-blend-mode: normal; /* ajuste conforme necessário */
 }
 
 .wrapper .commentTrackDown {
@@ -47,11 +52,8 @@
   text-align: center;
   width: 350px;
   height: 350px;
-  background-color: #0f1011;
+  background-color: #112f5d;
   border-radius: 5px;
-  box-shadow: 0 -4px 0px #0a0b0c, 0 4px 0px #0a0b0c, -4px 0 0px #0a0b0c,
-    4px 0 0px #0a0b0c, inset 0 1px 1px rgba(255, 255, 255, 0.1),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper .comment .commentHeader {

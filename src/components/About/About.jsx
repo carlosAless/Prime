@@ -3,6 +3,7 @@ import "./About.css";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
+import { clients } from "../../assets/assets/";
 export const About = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
@@ -140,20 +141,16 @@ export const About = () => {
           Clientes que <span>confiam</span>
         </h2>
 
-        <div>
-          <img src={assets.oliveiragomes} alt="oliveira gomes" />
-          <img src={assets.prefeitura} alt="prefeitra" />
-          <img src={assets.jataiautopecas} alt="jatai autopecas" />
-          <img src={assets.trialmoto} alt="trialmoto" />
-          <img src={assets.rededrogao} alt="rede drogao" id="rededrogao" />
-          <img src={assets.metta} alt="metta" />
-          <img
-            src={assets.sementeslima}
-            alt="sementes lima"
-            id="sementeslima"
-          />
-          <img src={assets.metra} alt="metra" id="metra" />
-          <img src={assets.venus} alt="venus" id="venus" />
+        <div className="wrapper">
+          <div className="clients">
+            {[...clients, ...clients].map((client, index) => (
+              <div className="client" key={index}>
+                <div className="clientHeader">
+                  <img src={client.image} alt="" className="clientImg" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

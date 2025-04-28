@@ -49,8 +49,8 @@ h2 {
   /* Gradiente de cor azul escuro para azul claro */
   background: linear-gradient(
     to left,
-    rgb(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
+    rgb(255 255 255 / 40%),
+    rgb(255 255 255),
     rgba(0, 0, 0, 0)
   );
   -webkit-background-clip: text; /* Aplica o gradiente ao texto */

@@ -58,6 +58,49 @@ export const assets = {
   scrollingMouse,
 };
 
+export const clients = [
+  {
+    id: 1,
+    name: "Jatai Auto Peças",
+    image: jataiautopecas,
+  },
+  {
+    id: 2,
+    name: "rededrogao",
+    image: rededrogao,
+  },
+  {
+    id: 3,
+    name: "prefeitura",
+    image: prefeitura,
+  },
+  {
+    id: 4,
+    name: "trialmoto",
+    image: trialmoto,
+  },
+  {
+    id: 5,
+    name: "metta",
+    image: metta,
+  },
+  {
+    id: 6,
+    name: "sementeslima",
+    image: sementeslima,
+  },
+  {
+    id: 7,
+    name: "metra",
+    image: metra,
+  },
+  {
+    id: 7,
+    name: "venus",
+    image: venus,
+  },
+];
+
 export const comments = [
   {
     id: 1,
