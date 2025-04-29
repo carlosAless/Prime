@@ -1,6 +1,8 @@
 import "./Services.css";
 import { assets } from "../../assets/assets";
 import { useEffect } from "react";
+import { IoIosArrowForward } from "react-icons/io";
+
 const animateLine = () => {
   const polylines = document.querySelectorAll(".path"); // Pega todas as linhas
 
@@ -98,21 +100,26 @@ const Services = () => {
         </main>
 
         <div className="itMaintenance">
-          <div className="burble"></div>
-
           <div id="contentPersonalComputer">
             <h2>
               Seu computador está muito <span>LENTO?</span>
             </h2>
-
-            <span>
-              <pre>FOR MATA ÇÃO</pre>
+            <span id="budget">
+              solicite um orçamento
+              <IoIosArrowForward />
             </span>
 
             <img src={assets.notebook} alt="notebook" />
           </div>
 
           <div id="contentNetwork">
+            <h2>
+              Seu computador está muito <span>LENTO?</span>
+            </h2>
+            <span id="budget">
+              solicite um orçamento
+              <IoIosArrowForward />
+            </span>
             <img src={assets.network} alt="network" className="networkImg" />
           </div>
         </div>
