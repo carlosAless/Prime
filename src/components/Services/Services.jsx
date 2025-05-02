@@ -45,49 +45,60 @@ const Services = () => {
       <span className="vertical-text">SERVIÇOS</span>
       <div className="containerServices">
         <main className="section-relogio">
-          <div className="title-controle">
-            <h2>Controle de Acesso Inteligente</h2>
-          </div>
+          <div className="title-controle"></div>
           <section className="info">
+            <img
+              src={assets.controlacess}
+              alt="idclass"
+              id="idclass"
+              srcSet=""
+            />
             <div>
-              <span className="descricao">
-                <p>
-                  Garanta máxima segurança e praticidade com os controladores de
-                  acesso da Control iD. Nossos dispositivos oferecem tecnologia
-                  avançada de identificação, incluindo leitura de impressão
-                  digital de alta precisão, para um acesso rápido, confiável e
-                  sem complicações.
-                </p>
+              <h2>CONTROLE DE ACESSO INTELIGENTE</h2>
+              <p>
+                Garanta máxima segurança e praticidade com os controladores de
+                acesso da Control iD. Nossos dispositivos oferecem tecnologia
+                avançada de identificação, incluindo leitura de impressão
+                digital de alta precisão, para um acesso rápido, confiável e sem
+                complicações.
+              </p>
+              <span id="budget">
+                Saiba mais
+                <IoIosArrowForward />
               </span>
             </div>
-
-            <section className="controleAcesso">
-              <section className="produtosId">
-                <img
-                  src={assets.controlacess}
-                  alt="idclass"
-                  id="idclass"
-                  srcSet=""
-                />
-              </section>
-            </section>
           </section>
 
           <section className="time-clock-section">
+            <div>
+              <h2>RELOGIO DE PONTO</h2>
+              <p>
+                O iDClass alia eficiência e custo-benefício elevados, oferecendo
+                as tecnologias de identificação presentes no Relógio de Ponto
+                iDClass, mas sem os recursos dispensados por Convenção ou Acordo
+                Coletivo de Trabalho. Como diferencial — além do design arrojado
+                característico dos produtos Control iD —, sua memória interna
+                oferece a capacidade de armazenar os dados de até 15 mil
+                funcionários e de 10 milhões de registros.
+              </p>
+              <span id="budget">
+                Saiba mais
+                <IoIosArrowForward />
+              </span>
+            </div>
             <figure className="time-clock-image">
               <img
                 src={assets.relogiodeponto}
                 alt="Relógio de ponto eletrônico"
               />
-              <figcaption>Relógio de Ponto</figcaption>
             </figure>
           </section>
 
           <section className="rhid">
-            <h2>Sistema de ponto integrado ao RHID</h2>
-
-            <div className="rhidImage">
-              <img src={assets.rhid} alt="rhid" />
+            <div>
+              <h2>
+                SISTEMA DE PONTO INTEGRADO AO RH<span id="red">iD</span>
+              </h2>
               <p>
                 O RHID é a solução ideal para otimizar a gestão de ponto
                 eletrônico, garantindo mais eficiência e precisão no controle de
@@ -95,6 +106,14 @@ const Services = () => {
                 ponto, o sistema automatiza processos, reduz erros manuais e
                 assegura conformidade com a legislação trabalhista.
               </p>
+              <span id="budget">
+                Saiba mais
+                <IoIosArrowForward />
+              </span>
+            </div>
+
+            <div className="rhidImage">
+              <img src={assets.rhid} alt="rhid" />
             </div>
           </section>
         </main>
@@ -114,7 +133,7 @@ const Services = () => {
 
           <div id="contentNetwork">
             <h2>
-              Seu computador está muito <span>LENTO?</span>
+              SERVIÇOS ESPECIALIZADOS EM <span>Redes de Computadores</span>
             </h2>
             <span id="budget">
               solicite um orçamento

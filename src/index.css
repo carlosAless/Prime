@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -23,12 +22,14 @@ html {
   --color-black-text: black;
   --color-blue-lite: cornflowerblue;
   --color-black-blue: #22242f;
+
+  --color-red: red;
 }
 
 h2 {
-  font-family: "Exo 2", serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 900;
   font-style: normal;
   color: var(--color-white-text);
   font-size: 25pt;
@@ -55,4 +56,14 @@ h2 {
   );
   -webkit-background-clip: text; /* Aplica o gradiente ao texto */
   -webkit-text-fill-color: transparent; /* Faz o texto herdar o gradiente */
+}
+
+#red {
+  color: var(--color-red);
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4fc3f7 #010d18;
 }

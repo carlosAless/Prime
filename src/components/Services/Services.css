@@ -2,14 +2,8 @@
   position: relative;
 }
 
-.rhid .rhidImage {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
 .rhid .rhidImage img {
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -31,12 +25,12 @@
 }
 
 .info {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  flex-direction: row;
+  background-image: url(/src/assets/background.png);
+  padding: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
   justify-content: center;
-  align-items: center;
-  border: 0.5px solid rgba(126, 123, 123, 0.301);
   height: 100vh;
   position: sticky;
   top: 0;
@@ -47,28 +41,84 @@
 .info div {
   display: flex;
   flex-direction: column;
+  text-align: start;
+  width: 40%;
+  height: 100%;
+}
+
+.info div p {
+  text-align: justify;
+}
+
+.info img {
+  width: 100%;
 }
 
 .time-clock-section {
+  background-image: url(/src/assets/background.png);
   position: sticky;
-  border: 0.5px solid rgba(126, 123, 123, 0.301);
+  border-top: 0.5px solid rgba(126, 123, 123, 0.301);
   height: 100vh;
   z-index: 2;
   top: 0;
   background-color: #010d18;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: center;
+}
+
+.time-clock-section div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 40%;
+  height: 100%;
+}
+
+.time-clock-section div p {
+  text-align: justify;
 }
 
 .time-clock-image img {
-  width: 80%;
+  width: 100%;
 }
 
 .rhid {
+  background-image: url(/src/assets/background.png);
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
   position: sticky;
-  height: 100vh;
-  border: 0.5px solid rgba(126, 123, 123, 0.301);
+  border-top: 0.5px solid rgba(126, 123, 123, 0.301);
   z-index: 3;
   background-color: #010d18;
   top: 0;
+  gap: 1rem;
+}
+
+.rhid div {
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+}
+
+.rhid div p {
+  text-align: justify;
+}
+
+.rhid .rhidImage {
+  width: 100%;
+  height: 100%;
+}
+
+.rhid div {
+  width: 40%;
+  height: 100%;
 }
 
 svg {
@@ -96,9 +146,6 @@ svg rect {
   color: var(--color-white-text);
 }
 
-.containerServices .title-controle h2 {
-  border: 0.5px solid rgba(126, 123, 123, 0.301);
-}
 .svg-container {
   margin-top: 100px; /* Distância para que o SVG não comece no topo da tela */
   height: auto;

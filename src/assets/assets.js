@@ -4,9 +4,8 @@ import empresa from "./empresa.svg";
 import experiencia from "./experiencia.svg";
 import mapa from "./mapa.svg";
 import suporte from "./suporte.svg";
-import computer from "./computer.glb";
 import controlacess from "./controlacess.png";
-import rhid from "./rhid.webp";
+import rhid from "./rhid.png";
 import timeClock from "./timeClock.png";
 import notebook from "./notebook.png";
 import network from "./network.png";
@@ -34,7 +33,6 @@ export const assets = {
   experiencia,
   mapa,
   suporte,
-  computer,
   controlacess,
   rhid,
   timeClock,
