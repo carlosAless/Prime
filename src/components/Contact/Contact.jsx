@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { MdOutlinePhone } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -80,7 +83,8 @@ const Contact = () => {
               <div className="contact-info">
                 <div className="contact-section">
                   <h3 className="section-title">
-                    📍<br></br>Nosso escritório
+                    <FaMapMarkerAlt />
+                    <br></br>Nosso escritório
                   </h3>
                   <p className="contact-text">
                     R. Cap. Serafim de Barros, 2537 - sala 2 - Vila Jardim Rio
@@ -90,14 +94,16 @@ const Contact = () => {
 
                 <div className="contact-section">
                   <h3 className="section-title">
-                    📞<br></br>Número de telefone
+                    <MdOutlinePhone />
+                    <br></br>Número de telefone
                   </h3>
                   <p className="contact-text">(64) 3631-6296</p>
                 </div>
 
                 <div className="contact-section">
                   <h3 className="section-title">
-                    ✉️<br></br>O email
+                    <MdEmail />
+                    <br></br>O email
                   </h3>
                   <p className="contact-text">
                     contato@primetecnologiajatai.com.br

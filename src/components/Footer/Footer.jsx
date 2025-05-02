@@ -1,11 +1,17 @@
 import { assets } from "../../assets/assets";
 import "./Footer.css";
+import { MdOutlinePhone } from "react-icons/md";
+import { RiSmartphoneFill } from "react-icons/ri";
+import { MdEmail } from "react-icons/md";
+import { FaFacebookSquare } from "react-icons/fa";
+
+import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
     <div>
       <footer className="footer">
-        
         <div className="footerContainer">
           <div className="footerLogo">
             <img src={assets.logo} alt="logo" />
@@ -34,13 +40,26 @@ const Footer = () => {
           </div>
           <div className="footerContact">
             <h4 className="customerSupportTitle">ATENDIMENTO</h4>
-            <p>📞 (64) 3631-6296</p>
-            <p>📱 WhatsApp: (64) 3631-6296</p>
-            <p>📧 contato@primetecnologiajatai.com.br</p>
+            <p>
+              <MdOutlinePhone /> (64) 3631-6296
+            </p>
+            <p>
+              <RiSmartphoneFill />
+              WhatsApp: (64) 3631-6296
+            </p>
+            <p>
+              <MdEmail /> contato@primetecnologiajatai.com.br
+            </p>
             <div className="footerSocial">
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
-              <a href="#">LinkedIn</a>
+              <a href="#">
+                <FaFacebookSquare />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <IoLogoLinkedin />
+              </a>
             </div>
           </div>
         </div>
